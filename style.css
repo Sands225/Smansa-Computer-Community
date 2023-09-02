@@ -1,0 +1,130 @@
+body {
+	font-family: "Poppins";
+	margin: 0;
+	color: white;
+	background: #16161a;
+}
+
+nav {
+	top: 0;
+	padding: 5px;
+	width: 100vw;
+	height: 60px;
+	z-index: 99;
+	display: flex;
+	background: lightgrey;
+	position: fixed;
+}
+.nav-left {
+	width: 50vw;
+	max-height: 60px;
+	display: flex;
+	align-items: start;
+}
+.nav-left > h2 {
+	font-size: 16px;
+	color: #16161a;
+	margin: 5px;
+}
+.nav-right {
+	width: 50vw;
+	margin-right: 45px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	color: #16161a;
+}
+.nav-right a {
+	font-size: 16px;
+	padding: 0 5px;
+}
+
+#scc-home {
+	height: 50vh;
+	margin-top: 80px;
+	display: flex;
+}
+#scc-home > div {
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.home-leftside {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.home-leftside > h1 {
+	font-size: 40px;
+	text-align: center;
+}
+
+/* button */
+.home-button {
+	background-color: transparent;
+	border-color: white;
+	color: white;
+	border-radius: 20px;
+	padding: 5px 10px;
+	font-size: 18px;
+}
+.home-button:hover {
+	background-color: purple;
+	border-color: transparent;
+}
+
+/* SCC - divions */
+#scc-divisions {
+	width: 100%;
+	padding-top: 80px;
+	text-align: center;
+}
+.divisions {
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-columns: 30% 30% 30%;
+}
+.divisions > div {
+	padding: 20px;
+	margin: 10px;
+	border: 1px solid white;
+	border-radius: 20px;
+}
+.divisions > div:hover {
+	background-color: white;
+	color: #16161a;
+}
+
+hr {
+	margin: 80px auto 0 auto;
+	width: 90vw;
+}
+#first-division,
+#second-division,
+#fifth-division {
+	text-align: center;
+	margin: 80px 5% 30px 5%;
+}
+.div-app {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+.div-app > div {
+	width: 30%;
+	margin: 0 3%;
+	border: 1px solid white;
+	border-radius: 20px;
+}
+.div-app img {
+	margin: 20px;
+	width: 50%;
+}
+
+.text-division > p {
+	padding: 0 20px 20px 20px;
+	text-align: center;
+}

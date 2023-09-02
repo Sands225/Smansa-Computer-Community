@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Poppins";
 	margin: 0;
@@ -10,16 +14,16 @@ nav {
 	padding: 5px;
 	width: 100vw;
 	height: 60px;
-	z-index: 99;
-	display: flex;
+	z-index: 99; /*menetapkan navigation agar tetap berada paling atas (diantara elemen HTML lainnya)*/
+	display: flex; /*membagi navigation menjadi 2 bagian (kanan kiri)*/
 	background: lightgrey;
-	position: fixed;
+	position: fixed; /*membuat posisi pada 'navigation' agar tidak berpindah*/
 }
+
 .nav-left {
 	width: 50vw;
-	max-height: 60px;
-	display: flex;
-	align-items: start;
+	display: flex; /*dibagi menjadi 2 bagian untuk logo dan teks*/
+	align-items: start; /*membuat posisi secara vertikal agar ditengah*/
 }
 .nav-left > h2 {
 	font-size: 16px;
@@ -28,27 +32,50 @@ nav {
 }
 .nav-right {
 	width: 50vw;
-	margin-right: 45px;
-	display: flex;
-	justify-content: end;
-	align-items: center;
+	margin-right: 60px;
+	display: flex; /*membagi navigation bagian kanan untuk */
+	justify-content: end; /*membuat elemen dalam class 'nav-right' bagian kanan*/
+	align-items: center; /*vertical center*/
 	color: #16161a;
 }
-.nav-right a {
+.nav-right > a {
+	text-decoration: none; /*menghilangkan dekorasi pada teks, seperti underline*/
+	color: #16161a;
 	font-size: 16px;
 	padding: 0 5px;
 }
 
+/* Style navigation pada "Divisions" */
+.nav-div {
+	cursor: pointer;
+}
+.nav-div > div {
+	margin: 35px 60px -50px 0;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+}
+.nav-div a {
+	color: whitesmoke;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 0 5px;
+}
+.nav-div a:hover {
+	background-color: lightgrey;
+	color: #16161a;
+}
+
 #scc-home {
-	height: 50vh;
+	height: 80vh;
 	margin-top: 80px;
 	display: flex;
 }
 #scc-home > div {
 	width: 50vw;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: column; /*mengubah arah flex, yang biasanya melebar kesamping menjadi kebawah*/
+	justify-content: center; /*horizontal center, tetapi karna menggunakan flex-direction:column; maka berubah menjadi vertical center*/
 	align-items: center;
 	text-align: center;
 }
@@ -72,7 +99,7 @@ nav {
 	font-size: 18px;
 }
 .home-button:hover {
-	background-color: purple;
+	background-color: blue;
 	border-color: transparent;
 }
 
@@ -85,16 +112,18 @@ nav {
 .divisions {
 	display: grid;
 	justify-content: space-evenly;
-	grid-template-columns: 30% 30% 30%;
+	grid-template-columns: 30% 30% 30%; /*mengatur elemen setiap div dalam class "divisions"*/
 }
-.divisions > div {
+.divisions > a {
 	padding: 20px;
 	margin: 10px;
 	border: 1px solid white;
 	border-radius: 20px;
+	color: white;
+	text-decoration: none;
 }
-.divisions > div:hover {
-	background-color: white;
+.divisions > a:hover {
+	background-color: lightgrey;
 	color: #16161a;
 }
 
@@ -102,15 +131,16 @@ hr {
 	margin: 80px auto 0 auto;
 	width: 90vw;
 }
+
 #first-division,
 #second-division,
 #fifth-division {
 	text-align: center;
-	margin: 80px 5% 30px 5%;
+	padding: 80px 5% 80px 5%;
 }
 .div-app {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-evenly; /*membuat jarak diantara tag div*/
 	text-align: center;
 }
 .div-app > div {

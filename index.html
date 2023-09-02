@@ -10,7 +10,9 @@
 		<title>Smansa Computer Community</title>
 	</head>
 	<body>
+		<!-- Navigation -->
 		<nav>
+			<!-- Navigation bagian kiri -->
 			<div class="nav-left">
 				<img
 					width="55px"
@@ -19,16 +21,25 @@
 					alt="logo SCC" />
 				<h2>Smansa Computer <br />Community</h2>
 			</div>
+
+			<!-- Navigation bagian kanan -->
 			<div class="nav-right">
 				<a href="">Home</a>
-				<details>
-					<summary>
-						<a>Divisions</a>
-					</summary>
+				<!-- details & summary berfungsi seperti fitur dropdown -->
+				<details class="nav-div">
+					<summary>Divisions</summary>
+					<div>
+						<a href="#first-division">Programming</a>
+						<a href="#second-division">Design</a>
+						<a href="#fifth-division">Networking</a>
+					</div>
 				</details>
 			</div>
 		</nav>
+
+		<!-- header -->
 		<div id="scc-home">
+			<!-- bagian kiri header (SCC, motto, & Get started) -->
 			<div class="home-leftside">
 				<h1>
 					Smansa Computer <br />
@@ -40,6 +51,7 @@
 				</a>
 			</div>
 
+			<!-- bagian kanan header -->
 			<div class="home-rightside">
 				<img
 					width="75%"
@@ -48,28 +60,37 @@
 			</div>
 		</div>
 
-		<!-- DIVIONS -->
+		<!-- divisi -->
 		<div id="scc-divisions">
 			<h1>Smansa Computer Community <br />Divisions</h1>
 			<div class="divisions">
-				<div>
-					<img src="src/logo-SCC-fixed.png" alt="Divisi 1" />
+				<a href="#first-division">
+					<img
+						width="100%"
+						src="src/logo-SCC-fixed.png"
+						alt="Divisi 1" />
 					<div class="text-division">
 						<h2>Divisi 1<br />Programming</h2>
 					</div>
-				</div>
-				<div>
-					<img src="src/logo-SCC-fixed.png" alt="Divisi 1" />
+				</a>
+				<a href="#second-division">
+					<img
+						width="100%"
+						src="src/logo-SCC-fixed.png"
+						alt="Divisi 1" />
 					<div class="text-division">
 						<h2>Divisi 2<br />Desain Grafis</h2>
 					</div>
-				</div>
-				<div>
-					<img src="src/logo-SCC-fixed.png" alt="Divisi 1" />
+				</a>
+				<a href="#fifth-division">
+					<img
+						width="100%"
+						src="src/logo-SCC-fixed.png"
+						alt="Divisi 1" />
 					<div class="text-division">
 						<h2>Divisi 5<br />Networking</h2>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 
@@ -169,7 +190,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="first-division">
+		<div id="fifth-division">
 			<h1>
 				Divisi 5 <br />
 				Networking
